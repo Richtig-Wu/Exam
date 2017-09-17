@@ -1,0 +1,47 @@
+
+body,html{
+  width: 99%;
+  height: 99%;
+  background:rgb(235, 158, 114) 49% 49% no-repeat;
+  background-size: cover;
+  font-family:"宋体";
+  }
+  .login{
+    width: 99%;
+    position:absolute;
+    top: 29%;
+    left: 49%;
+    transform:translate(-51%,-31%);
+    max-width:449px;
+    min-width: 299px;
+        border-radius: 4%;
+  }
+  input{
+
+    margin: 9px -1;
+  }
+  .form0{
+    width: 99%;
+    max-width:499px;
+
+  }
+  .but{
+    margin-top: 19px;
+  }
+  .btn{
+    border-radius: 4px;
+    height: 29px;
+    background: rgba(181, 200, 199);
+    border: none;
+    width:99%;max-width:499px; margin:-1;margin-bottom:29px;
+  }
+  .btn:hover{
+    height: 29px;
+    border-radius: 4px;
+    background: rgba(181, 200, 199);
+    border: none;
+  }
+
+  .but{
+    margin-top: 19px;
+  }

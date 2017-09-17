@@ -1,0 +1,75 @@
+  *{
+        margin:0 auto;
+        padding: 0;
+        font-weight:bold;
+        font-family: "宋体";
+      }
+
+      html,body{
+        width:100%;
+        height:100%;
+        background: rgb(195, 203, 251) center center;
+        background-size: cover;
+      }
+      .box{
+        max-width:500px;
+        padding: 20px 10px 0 10px;
+        margin: 0 auto;
+
+      }
+      #form1{
+        margin-top: -50px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+      }
+
+@media screen and (orientation: portrait){
+  #form1{
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+}
+
+      .box form span{
+        display:inline-block;
+        width:80px;
+        text-align: left;
+        height:40px;
+        line-height: 40px;
+
+        font-size: 18px;
+      }
+      input{
+        font-size: 22px;
+        border: 1px solid rgba(129, 129, 129);
+        background: white;
+        height:32px;
+        width: 100%;
+        max-width:330px;
+        outline: none;
+        border-radius: 13px;
+        padding-left: 15px;
+      }
+      input[type="text"]:focus,input[type="password"]:focus{
+        outline: none;
+        background: rgba(124, 124, 124);
+        height: 32px;
+
+      }
+      h1{
+        text-align:center;
+        font-size: 38px;
+        padding: 20px 0;
+      }
+      button{
+        width:30%;
+        height: 30px;
+        margin-top: 30px;
+        font-size: 18px;
+        margin-left:15%;
+        font-family: "宋体";
+        border-radius: 23px;
+        background: rgb(169, 151, 231);
+      }

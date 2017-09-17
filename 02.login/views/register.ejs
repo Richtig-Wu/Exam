@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon"href="images/">
+    <link rel="stylesheet" href="/stylesheets/register.css">
+    <title><%= title %></title>
+
+  </head>
+  <body>
+    <div class="box col-sm-12 col-lg-12">
+      <form class="" action="/register" method="post" id="form1">
+        <h1>Register</h1>
+        <span>帐号:</span><br><input type="email" class="form-control name" required placeholder="email" name="email"><i style="color:rgb(217, 71, 61);display:inline-block; "><%= rem %></i><br>
+        <span>姓名:</span><br><input type="text" name="name" value="" placeholder="name"maxlength="10" required><br>
+        <span>密码:</span><br><input type="password" name="password" id="password" maxlength="8" placeholder="password" value="" required ><br>
+        <span>确认密码:</span><br><input type="password" name="password2" id="password2" maxlength="8"placeholder="passwordok"  value="" required><br>
+        <span>性别:</span><input type="radio" name="sex" value="男" placeholder="sex" style="width:15px;height:15px;" checked>男&nbsp;&nbsp;&nbsp;</span><input type="radio" name="sex" value="女" style="width:15px;height:15px;">女<br>
+        <span>年龄:</span><br><input type="number" name="age" max="120" placeholder="age" maxlength="3"  required><br>
+        <span>出生日期:</span><br><input type="date" name="user_time" required><br>
+        <button type="submit">提交</button>
+        <button type="reset">重置</button>
+      </form>
+      <script type="text/javascript">
+        var blur = document.getElementById("password");
+        var blur2 = document.getElementById("password2");
+
+        blur2.onblur = function(){
+          if(blur2.value !== blur.value){
+            alert("两次密码输入不统一!");
+            blur2.value = '';
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>
